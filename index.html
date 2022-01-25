@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+    <title>Gerenciador de Senha</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="author" content="Rommel">
+    <meta charset="utf-8">
+    <style>
+        textarea{width: 100%;overflow-y: hidden;}  
+        p{font-size: 20px;line-height: 20px;
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;}
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="titulo">GERENCIADOR DE SENHA</h1>
+        <h2 class="subtilulo">Senha:</h2>
+        <button id="cliqueparagerar" onclick="seqNumLetra()">Gerar</button><br>
+        <textarea placeholder="" id="gerado"></textarea></p>
+        <h3>CHAVE: </h3>
+
+        <div id="caixa_chave">
+            <input type="password" id="key" size="16" value= "********"> 
+            <img id="olho" src="./img/olho.png"/><br>
+            <button id="senhaok" onclick="cryptar()">Encriptar</button>
+        </div>
+        <h4>Senha Encriptada:</h4>
+        <p id="encriptada">***************************************************************</p>
+
+        <textarea placeholder="" id="code"></textarea>
+        <br>
+        <p> <button id="decrip" onclick="decryptar()">Desencriptar</button></p>
+        <br>
+        <h4> Senha Desencriptada: </h4>
+        <p id="desencriptada">**************************************************************</p>
+    </main>
+
+    <script type="text/javascript" src="./script/index.js"></script>
+    <script type="text/javascript" src="./script/jquery.min.js"></script>
+    <script type="text/javascript" src="./script/script.js"></script>
+
+</body>
